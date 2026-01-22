@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的手账 | 生活趣事</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images.jpg" alt="avatar">
+            <h2>Lee</h2>
+            <p>记录生活的角落</p>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">首页</a>
+            <a href="travel.html">旅游相册</a>
+            <a href="life.html" class="active">生活趣事</a>
+            <a href="mood.html">每日心情</a>
+        </nav>
+    </aside>
+
+    <!-- 主内容 -->
+    <main class="content">
+        <div class="page-header">
+            <h1>生活趣事</h1>
+            <button id="addLifeBtn">＋ 写一条</button>
+        </div>
+
+        <!-- 输入表单 -->
+        <div id="lifeForm" class="form hidden">
+            <textarea id="lifeText" placeholder="记录一件小事吧…"></textarea>
+            <input type="file" id="lifeImage" accept="image/*">
+            <button id="saveLife">保存</button>
+        </div>
+
+        <!-- 列表 -->
+        <div id="lifeList" class="card-list"></div>
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

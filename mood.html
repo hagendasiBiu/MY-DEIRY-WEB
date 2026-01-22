@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的手账 | 每日心情</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images.jpg" alt="avatar">
+            <h2>Lee</h2>
+            <p>记录生活的角落</p>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">首页</a>
+            <a href="travel.html">旅游相册</a>
+            <a href="life.html">生活趣事</a>
+            <a href="mood.html" class="active">每日心情</a>
+        </nav>
+    </aside>
+
+    <!-- 主内容 -->
+    <main class="content mood-page">
+        <h1>今日心情</h1>
+
+        <!-- 情绪标签 -->
+        <div class="mood-tags">
+            <span data-mood="🙂 平静">🙂 平静</span>
+            <span data-mood="☁️ 放空">☁️ 放空</span>
+            <span data-mood="✨ 开心">✨ 开心</span>
+            <span data-mood="🌧 低落">🌧 低落</span>
+            <span data-mood="🌱 充实">🌱 充实</span>
+        </div>
+
+        <!-- 心情输入 -->
+        <textarea id="moodText" placeholder="今天的心情是……"></textarea>
+
+        <button id="saveMood">保存今日心情</button>
